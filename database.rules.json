@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "ig": {
+      ".read": "now < 1798732800000",
+      ".write": "now < 1798732800000",
+      "groups": {
+        "$g": {
+          "caption": { ".validate": "newData.isString() && newData.val().length <= 60" },
+          "reply": { ".validate": "newData.isString() && newData.val().length <= 50" }
+        }
+      }
+    }
+  }
+}
